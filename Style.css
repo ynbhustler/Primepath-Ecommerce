@@ -1,0 +1,77 @@
+:root {
+  --bg-light: #f9fafb;
+  --bg-dark: #0f172a;
+  --text-light: #1e293b;
+  --text-dark: #f1f5f9;
+  --primary: #dc2626;
+  --secondary: #38bdf8;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.navbar {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  height: 60px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  background: var(--secondary);
+  padding: 1em;
+}
+
+.menu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.welcome, .agents, .chart, .comments {
+  padding: 2em;
+  text-align: center;
+}
+
+.agent-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.agent-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 10px;
+  width: 100px;
+}
+
+footer {
+  background: #111;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
