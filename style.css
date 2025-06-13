@@ -1,0 +1,92 @@
+:root {
+  --bg-light: #f2f6fc;
+  --bg-dark: #0f172a;
+  --text-light: #1e293b;
+  --text-dark: #f1f5f9;
+  --primary: #dc2626;
+  --secondary: #38bdf8;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.navbar {
+  background: var(--primary);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+.logo {
+  height: 50px;
+  margin-bottom: 0.5em;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  background: var(--secondary);
+  padding: 1em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.welcome {
+  text-align: center;
+  padding: 2em;
+}
+
+.chart {
+  padding: 2em;
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+.comments {
+  padding: 1.5em;
+  background: #fff;
+  color: #111;
+}
+
+.agent-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.agent-card {
+  background: #e2e8f0;
+  border-radius: 10px;
+  padding: 1em;
+  width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
