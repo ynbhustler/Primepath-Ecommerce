@@ -57,8 +57,32 @@ body.dark-mode {
   padding: 2em;
 }
 
-.chart {
+.instructions, .agents, .chart, .comments {
   padding: 2em;
+  text-align: center;
+}
+
+.agents img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0.5em;
+}
+
+.comment-box {
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+  margin: 0.5em auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+body.dark-mode .comment-box {
+  background: #1e293b;
+  color: var(--text-dark);
 }
 
 footer {
