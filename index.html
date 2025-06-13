@@ -1,43 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>PrimePath E-commerce</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <img src="https://raw.githubusercontent.com/theprimeuser/primepath-ecommerce/main/logo.png" alt="PrimePath Logo" class="logo">
+  <!-- Navbar with Logo -->
+  <div class="navbar">
+    <img src="logo.png" alt="PrimePath Logo" class="logo">
     <h1>PrimePath E-commerce</h1>
-    <p class="tagline">Your Blameless Path to Crypto Wealth</p>
-  </header>
-
-  <nav class="menu">
+    <p>Your Blameless Path to Crypto Wealth</p>
+  </div>  <!-- Navigation Menu -->  <div class="menu">
     <a href="#dashboard">Dashboard</a>
-    <a href="#store">Store</a>
-    <a href="#agents">Verified Agents</a>
+    <a href="#profile">Profile Settings</a>
     <a href="#transactions">Transactions</a>
-    <a href="#profile">Profile</a>
+    <a href="#buy">Buy Crypto</a>
+    <a href="#chat">Chat with Agent</a>
     <a href="#about">About</a>
-    <a href="#chat">Agent Chat</a>
-  </nav>
-
-  <main id="dashboard">
-    <section class="welcome">
-      <h2>Welcome to PrimePath</h2>
-      <p>Track your crypto store growth, buy crypto externally, and watch your wallet grow by 30% every 2d 3h.</p>
-    </section>
-
-    <section class="chart">
-      <h3>Growth Chart</h3>
-      <canvas id="profitChart"></canvas>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 PrimePath E-commerce. All rights reserved.</p>
-  </footer>
-</body>
+    <a href="#logout">Logout</a>
+  </div>  <!-- Welcome Message -->  <div class="welcome">
+    <h2>Welcome to Your Store</h2>
+    <p>All transactions are secured. Buy cryptocurrency externally and deposit to your wallet to get started.</p>
+  </div>  <!-- Agent Slots -->  <div class="agents" id="agents">
+    <h3>Verified Agents</h3>
+    <div class="agent-list">
+      <div class="agent-card">Agent 1</div>
+      <div class="agent-card">Agent 2</div>
+      <div class="agent-card">Agent 3</div>
+      <div class="agent-card">Agent 4</div>
+      <div class="agent-card">Agent 5</div>
+      <div class="agent-card">Agent 6</div>
+      <div class="agent-card">Agent 7</div>
+    </div>
+  </div>  <!-- Graph Chart Area -->  <div class="chart" id="chart">
+    <h3>Your Growth Chart</h3>
+    <canvas id="profitChart" width="400" height="200"></canvas>
+  </div>  <!-- Comments Section -->  <div class="comments">
+    <h3>15,000+ Positive Feedbacks</h3>
+    <ul>
+      <li>⭐⭐⭐⭐⭐ “Amazing platform and support!”</li>
+      <li>⭐⭐⭐⭐⭐ “Fast growth, smooth withdrawal!”</li>
+      <li>⭐⭐⭐⭐⭐ “Best place to grow my crypto!”</li>
+      <!-- Repeat more comments using JavaScript later -->
+    </ul>
+  </div>  <!-- Footer -->  <footer>
+    &copy; 2025 PrimePath E-commerce. All rights reserved.
+  </footer>  <!-- JavaScript to enable chart later -->  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  <script>
+    const ctx = document.getElementById('profitChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4'],
+        datasets: [{
+          label: 'Wallet Growth',
+          data: [100, 130, 169, 219],
+          borderColor: 'red',
+          borderWidth: 2,
+          fill: false
+        }]
+      }
+    });
+  </script></body>
 </html>
