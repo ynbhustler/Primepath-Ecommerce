@@ -1,5 +1,6 @@
-<!DOCTYPE html><html lang="en">
-<head><link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <title>PrimePath E-commerce</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,10 @@
     <img src="logo.png" alt="PrimePath Logo" class="logo">
     <h1>PrimePath E-commerce</h1>
     <p>Your Blameless Path to Crypto Wealth</p>
-  </div>  <!-- Navigation Menu -->  <div class="menu">
+  </div>
+
+  <!-- Navigation Menu -->
+  <div class="menu">
     <a href="#dashboard">Dashboard</a>
     <a href="#profile">Profile Settings</a>
     <a href="#transactions">Transactions</a>
@@ -19,10 +23,16 @@
     <a href="#chat">Chat with Agent</a>
     <a href="#about">About</a>
     <a href="#logout">Logout</a>
-  </div>  <!-- Welcome Message -->  <div class="welcome">
-    <h2>Welcome to Your Store</h2>
-    <p>All transactions are secured. Buy cryptocurrency externally and deposit to your wallet to get started.</p>
-  </div>  <!-- Agent Slots -->  <div class="agents" id="agents">
+  </div>
+
+  <!-- Welcome Message -->
+  <div class="welcome">
+    <h2>Welcome to Your Crypto Store</h2>
+    <p>To begin, buy crypto from an external app and send it to your store wallet.</p>
+  </div>
+
+  <!-- Verified Agents -->
+  <div class="agents">
     <h3>Verified Agents</h3>
     <div class="agent-list">
       <div class="agent-card">Agent 1</div>
@@ -33,33 +43,46 @@
       <div class="agent-card">Agent 6</div>
       <div class="agent-card">Agent 7</div>
     </div>
-  </div>  <!-- Graph Chart Area -->  <div class="chart" id="chart">
-    <h3>Your Growth Chart</h3>
+  </div>
+
+  <!-- Growth Chart -->
+  <div class="chart">
+    <h3>Your Profit Growth</h3>
     <canvas id="profitChart" width="400" height="200"></canvas>
-  </div>  <!-- Comments Section -->  <div class="comments">
-    <h3>15,000+ Positive Feedbacks</h3>
+  </div>
+
+  <!-- Positive Feedback -->
+  <div class="comments">
+    <h3>15,000+ Positive Comments</h3>
     <ul>
-      <li>⭐⭐⭐⭐⭐ “Amazing platform and support!”</li>
-      <li>⭐⭐⭐⭐⭐ “Fast growth, smooth withdrawal!”</li>
-      <li>⭐⭐⭐⭐⭐ “Best place to grow my crypto!”</li>
-      <!-- Repeat more comments using JavaScript later -->
+      <li>⭐⭐⭐⭐⭐ “Very easy to use and secure!”</li>
+      <li>⭐⭐⭐⭐⭐ “Best crypto store I’ve seen!”</li>
+      <li>⭐⭐⭐⭐⭐ “Profits updated fast!”</li>
     </ul>
-  </div>  <!-- Footer -->  <footer>
+  </div>
+
+  <!-- Footer -->
+  <footer>
     &copy; 2025 PrimePath E-commerce. All rights reserved.
-  </footer>  <!-- JavaScript to enable chart later -->  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  <script>
+  </footer>
+
+  <!-- ChartJS for Growth Graph -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
     const ctx = document.getElementById('profitChart');
     new Chart(ctx, {
       type: 'line',
       data: {
         labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4'],
         datasets: [{
-          label: 'Wallet Growth',
-          data: [100, 130, 169, 219],
-          borderColor: 'red',
+          label: 'Wallet Profit',
+          data: [50, 120, 200, 350],
+          borderColor: '#dc2626',
           borderWidth: 2,
           fill: false
         }]
       }
     });
-  </script></body>
+  </script>
+</body>
 </html>
