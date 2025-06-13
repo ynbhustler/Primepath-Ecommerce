@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PrimePath E-commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <img src="logo.png" alt="PrimePath Logo" class="logo">
+    <h1>PrimePath E-commerce</h1>
+    <p>Your Blameless Path to Crypto Wealth</p>
+  </div>
+
+  <!-- Menu -->
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="profile.html">Profile Settings</a>
+    <a href="transactions.html">Transactions</a>
+    <a href="buy.html">Buy Crypto</a>
+    <a href="chat.html">Chat with Agent</a>
+    <a href="about.html">About</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <!-- Welcome -->
+  <div class="welcome">
+    <h2>Welcome to PrimePath</h2>
+    <p>All transactions are secured. Buy cryptocurrency externally and deposit it to your store wallet to begin.</p>
+  </div>
+
+  <!-- Verified Agents -->
+  <div class="agents" id="agents">
+    <h3>Verified Agents</h3>
+    <div class="agent-list">
+      <div class="agent-card">Agent 1</div>
+      <div class="agent-card">Agent 2</div>
+      <div class="agent-card">Agent 3</div>
+      <div class="agent-card">Agent 4</div>
+      <div class="agent-card">Agent 5</div>
+      <div class="agent-card">Agent 6</div>
+      <div class="agent-card">Agent 7</div>
+    </div>
+  </div>
+
+  <!-- Growth Chart -->
+  <div class="chart" id="chart">
+    <h3>Your Growth Chart</h3>
+    <canvas id="profitChart" width="400" height="200"></canvas>
+  </div>
+
+  <!-- Comments -->
+  <div class="comments">
+    <h3>15,000+ Positive Feedbacks</h3>
+    <ul>
+      <li>⭐⭐⭐⭐⭐ “Amazing platform and support!”</li>
+      <li>⭐⭐⭐⭐⭐ “Fast growth, smooth withdrawal!”</li>
+      <li>⭐⭐⭐⭐⭐ “Best place to grow my crypto!”</li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 PrimePath E-commerce. All rights reserved.
+  </footer>
+
+  <!-- Chart JS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('profitChart');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Day 1', 'Day 2', 'Day 3', 'Day 4'],
+        datasets: [{
+          label: 'Wallet Growth',
+          data: [100, 150, 200, 250],
+          borderColor: 'red',
+          borderWidth: 2,
+          fill: false
+        }]
+      }
+    });
+  </script>
+
+</body>
+</html>
